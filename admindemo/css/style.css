@@ -1,0 +1,124 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: #eee;
+}
+.cl::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.lteadmin-container *{
+    transition: all .5s;
+}
+.lteadmin-container{
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+.main-content{
+    margin-left: 270px;
+    padding:15px;
+
+}
+
+
+.lte-main-nav{
+    padding-left:270px;
+    width: 100%;
+    background-color: #007cb1;
+}
+.lte-sidebar{
+    width: 270px;
+    float: left;
+    position: relative;
+    z-index: 2000;
+
+}
+.lte-sidebar h1{
+    margin:0;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #006d90;
+    color:#fff;
+}
+.main-sidebar{
+    position: absolute;
+    padding-bottom: 9999px;
+    margin-bottom: -9990px;
+    background: #404040;
+    width: 100%;
+    top:50px;
+    left:0;
+}
+.lte-panel-default{
+    border:#ddd;
+    border-top:3px solid #ddd;
+}
+.lte-panel-success{
+    border:#00b347;
+    border-top:3px solid #00b347;
+}
+.lte-panel-primary{
+    border:#0056a4;
+    border-top:3px solid #0056a4;
+}
+.lte-panel-danger{
+    border:#960000;
+    border-top:3px solid #960000;
+}
+.lte-btn-default{
+    background: ;
+    border: ;
+}
+.lte-btn-primary{
+    background: ;
+    border: ;
+}
+.lte-btn-success{
+    background: ;
+    border: ;
+}
+.lte-btn-info{
+    background: ;
+    border: ;
+}
+.lte-btn-warming{
+    background: ;
+    border: ;
+}
+.info-box{
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.info-box h4,
+.info-box p{
+    margin-left: 105px;
+}
+.info-box-icon{
+    height: 100px;
+    width: 100px;
+    float: left;
+    background: #960000;
+}
+
+@media screen and (max-width:768px){
+    .main-sidebar{
+        left:-100%;
+    }
+    .lte-sidebar{
+        width:100%;
+        float:none;
+    }
+    .main-content{
+        margin-left: 0;
+    }
+    .lte-main-nav {
+        padding-left:0;
+    }
+}
